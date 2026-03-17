@@ -1,0 +1,18 @@
+# Build artifacts
+/target
+
+# Secrets - NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Internal tooling
+.planning/
+.claude/
+
+# Test artifacts
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
