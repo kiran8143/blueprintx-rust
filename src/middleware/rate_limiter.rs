@@ -247,7 +247,7 @@ mod tests {
         let old = Instant::now() - Duration::from_millis(200);
         let recent = Instant::now();
 
-        let ip: IpAddr = "10.0.0.1".parse().unwrap();
+        let ip: IpAddr = "127.0.0.1".parse().unwrap();
         state.log.insert(ip, vec![old, recent]);
 
         cleanup(&state);
@@ -264,7 +264,7 @@ mod tests {
             window: Duration::from_millis(10),
         };
 
-        let ip: IpAddr = "10.0.0.2".parse().unwrap();
+        let ip: IpAddr = "127.0.0.2".parse().unwrap();
         let old = Instant::now() - Duration::from_millis(100);
         state.log.insert(ip, vec![old]);
 
